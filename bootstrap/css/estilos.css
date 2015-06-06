@@ -1,0 +1,92 @@
+body{
+	padding-top: 20px;
+	background: #2c3e50;
+	color:#fff;
+}
+div#fondo{
+	background: #fff;
+	width: 85%;
+	min-height: 600px;
+	color: black;
+	border-radius: 1em;
+}
+div#header{
+	
+	width:100%;
+	height: 150px;
+	color: #fff;
+	text-align: center;
+}
+div#nav{
+	background: #3597d3;
+	width:100%;
+	color: #fff;
+	text-align: center;
+}
+a#nav{
+	color: #fff;
+}
+div#navbar-1{
+	border-radius: 0.5em;
+	background: #3597d3;
+
+	height: 20px;
+}
+a#nav:hover{
+	color: #2c3e50;
+}
+a#select{
+	color: #2c3e50;
+}
+footer{
+	margin: 0 auto;
+	vertical-align: top;
+}
+p#bienvenida{
+	font-size: 1.2em;
+	color: #2c3e50;
+}
+label#alintext{
+	text-align: right;
+}
+div#centro, div#centro2,  div#centro4{
+	
+	width:50%;
+	min-height: 300px;
+	padding-top: 10px;
+	border: 1.5px solid #2c3e50;
+	border-radius: 1em;
+	color: #2c3e50;
+	font-family: helvetica;
+}
+div#centro2{
+
+	width:95%;
+	min-height: 300px;
+}
+div#centro5{
+	background: #cde3e8;
+	width:60%;
+	min-height: 300px;
+}
+div#centro4{
+	width:60%;
+	min-height: 300px;
+}
+div#footer{
+	
+	color: #2c3e50;
+}
+img#logo{
+height:140px;
+}
+
+input#passwd, input#usuario{
+	background: #cde3e8;
+}
+select#option, select#option1{
+	background: #cde3e8;
+}
+select#option1{
+	width: 200px;
+}

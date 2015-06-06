@@ -1,0 +1,65 @@
+body{
+	background: #2c3e50;
+	color:#fff;
+}
+div#fondo{
+	background: #fff;
+	width: 85%;
+	height: 600px;
+	color: black;
+	border-radius: 1em;
+}
+div#header{
+	
+	width:100%;
+	height: 150px;
+	color: #fff;
+	text-align: center;
+}
+div#nav{
+	background: #3597d3;
+	width:100%;
+	height: 40px;
+	color: #fff;
+	border-radius: 0.5em;
+	text-align: center;
+}
+nav{
+	margin: 0 auto;
+}
+ul{
+	margin: 0 auto;
+	vertical-align: inline-block;
+	list-style: none;
+}
+li{
+	margin: 0 auto;
+}
+a{
+	margin: 0 auto;
+	color: #fff;
+}
+p#bienvenida{
+	font-size: 1.2em;
+	color: #2c3e50;
+}
+
+div#centro{
+	
+	width:70%;
+	border: 1.5px solid #2c3e50;
+	border-radius: 1em;
+	color: #2c3e50;
+	font-family: helvetica;
+}
+div#footer{
+	
+	color: #2c3e50;
+}
+img#logo{
+height:140px;
+}
+
+input#passwd, input#usuario{
+	background: #cde3e8;
+}
