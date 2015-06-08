@@ -73,6 +73,15 @@ div#centro4{
 	width:60%;
 	min-height: 300px;
 }
+div#centro6{
+	width:60%;
+	min-height: 180px;
+	padding-top: 20px;
+	border: 1.5px solid #2c3e50;
+	border-radius: 1em;
+	color: #2c3e50;
+	font-family: helvetica;
+}
 div#footer{
 	
 	color: #2c3e50;
@@ -81,8 +90,11 @@ img#logo{
 height:140px;
 }
 
-input#passwd, input#usuario{
+input#passwd,input#bus, input#usuario{
 	background: #cde3e8;
+}
+input#bus{
+	max-width: 400px;
 }
 select#option, select#option1{
 	background: #cde3e8;
