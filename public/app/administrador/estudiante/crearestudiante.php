@@ -109,25 +109,32 @@
 					<input type="password" class="form-control" id="passwd" name="direccion" placeholder="Confirme contraseña: ">
 				</div>
 			</div>
+			<div class="form-group">
 			<label class="control-label col-md-1"><b>Grado: </b></label>
 					<div class="col-md-3">
 						<select class="form-control" name="" placeholder="Sexo:" id="option">
 							<option value="sex">Seleccione el grado..</option>
-							<option value="codigo">6-A</option>
-							<option value="codigo">6-B</option>
-							<option value="codigo">7-A</option>
-							<option value="codigo">7-B</option>
-							<option value="codigo">8-A</option>
-							<option value="codigo">8-B</option>
-							<option value="codigo">9-A</option>
-							<option value="codigo">9-B</option>
-							<option value="codigo">10-A</option>
-							<option value="codigo">10-B</option>
-							<option value="codigo">11-A</option>
-							<option value="codigo">11-B</option>
+							<option value="codigo">6</option>
+							<option value="codigo">7</option>
+							<option value="codigo">8</option>
+							<option value="codigo">9</option>
+							<option value="codigo">10</option>
+							<option value="codigo">11</option>
 						</select>
 					</div>
-					<label class="control-label col-md-8"><b> </b></label></br></br>
+						<label class="control-label col-md-1"><b>Grupo: </b></label>
+					<div class="col-md-3">
+						<select class="form-control" name="" placeholder="Sexo:" id="option">
+							<option value="sex">Seleccione el grupo..</option>
+							<option value="codigo">A</option>
+							<option value="codigo">B</option>
+							<option value="codigo">C</option>
+							<option value="codigo">D</option>
+							<option value="codigo">E</option>
+						</select>
+					</div>
+					<label class="control-label col-md-4"><b> </b></label></br></br>
+				</div>				
 			<center>
 				<button class="btn btn-info" aria-label="right Align">
 				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar

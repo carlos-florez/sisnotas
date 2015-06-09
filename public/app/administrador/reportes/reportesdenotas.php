@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>DOCENTE</title>
+	<title>ADMINISTRADOR</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap-theme.min.css">
@@ -35,11 +35,28 @@
 					<div class="collapse navbar-collapse" id="navbar-1">
 						<ul class="nav navbar-nav">
 							<li role="presentation"><a id="nav" href="../accesoadministrador.html"><b>Inicio</b></a></li>
-							<li role="presentation"><a id="nav" href="registroactual.php"><b>Registro actual</b></a></li>
-							<li role="presentation"><a id="nav" href="registrohistorico.php"><b>Registro historico</b></a></li>
-							<li role="presentation"><a id="nav"href="actualizardocente.php"><b>Estudiantes perdidos</b></a></li>
-							<li role="presentation"><a id="nav" href="estadodocente.php"><b>Cargas docente</b></a></li>
-							<li role="presentation" class="active"><a id="select" href="estadodocente.php"><b>Reporte de notas</b></a></li>
+							<li role="presentation" class="active"><a id="select" href="reportesdenotas.php"><b>Reporte de notas</b></a></li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav" role="button">Registro actual <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="registroactualestudiante.php">Estudiante</a></li>
+									<li><a href="registroactualdocente.php">Docente</a></li>
+									<li><a href="registroactualgrado.php">Grado</a></li>
+									<li><a href="registroactualasignatura.php">Asignatura</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav" role="button">Registro historico <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="registrohistoricoestudiante.php">Estudiante</a></li>
+									<li><a href="registrohistoricodocente.php">Docente</a></li>
+									<li><a href="registrohistoricogrado.php">Grado</a></li>
+									<li><a href="registrohistoricoasignatura.php">Asignatura</a></li>
+								</ul>
+							</li>
+							<li role="presentation"><a id="nav" href="reporteestudiantesperdidos.php"><b>Estudiantes perdidos</b></a></li>
+							<li role="presentation"><a id="nav" href="reportecargadocente.php"><b>Cargas docente</b></a></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -48,80 +65,169 @@
 	</header>
 			<b><p id="bienvenida">Bienvenid@ administrador(a): Carlos Alberto Florez Torres</p></b>
 	<div class="container" id="centro2">
-	<form action="" class="form-horizontal">
-		<center><label  class="control-label"><b>Crear docente</b></label></center><br>
-			<div class="form-group">
-				<label for="nombre" class="control-label col-md-1"><b>Nid:  </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="nid" placeholder="Nid: ">
-				</div>
-				<label class="control-label col-md-1"><b>Nombres: </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="nombres" placeholder="Nombres: ">
-				</div>
-				<label class="control-label col-md-1"><b>Apellidos: </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="apellidos" placeholder="Apellidos: ">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-1"><b>Sexo:  </b></label>
-					<div class="col-md-3">
+		<center><form action="" class="form-inline">
+					<label class="control-label col-md-1"><b>Grado: </b></label>
+					<div class="col-md-2">
 						<select class="form-control" name="" placeholder="Sexo:" id="option">
-							<option value="sex">Seleccione el sexo..</option>
-							<option value="m">Masculino</option>
-							<option value="f">Femenino</option>
+							<option value="sex">elija grado..</option>
+							<option value="codigo">6</option>
+							<option value="codigo">7</option>
+							<option value="codigo">8</option>
+							<option value="codigo">9</option>
+							<option value="codigo">10</option>
+							<option value="codigo">11</option>
 						</select>
 					</div>
-				<label class="col-md-1"><b>Fecha nacimiento:</b></label>
-				<div class="col-md-3">
-					<input type="date" class="form-control" id="passwd" name="datetimepicker" data-date-format="YYYY-MM-DD"id="fnaci" placeholder="Fecha nacimiento: ">
-				</div>
-				<label class="control-label col-md-1"><b>Dirección: </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="direccion" placeholder="Direccion: ">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-1"><b>Correo:  </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="nomacudiente" placeholder="Nombre acudiente: ">
-				</div>
-				<label class="control-label col-md-1"><b>Telefono: </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="telacudiente" placeholder="Telefono acudiente: ">
-				</div>
-				<label class="control-label col-md-1"><b>rol:  </b></label>
-					<div class="col-md-3">
-						<select class="form-control" name="" placeholder="Rol:" id="option">
-							<option value="opt">Seleccione un rol..</option>
-							<option value="doc">Docente</option>
-							<option value="adm">Administrador</option>
+					<label class="control-label col-md-1"><b>Grupo: </b></label>
+					<div class="col-md-2">
+						<select class="form-control" name="" placeholder="Sexo:" id="option">
+							<option value="sex">elija grupo..</option>
+							<option value="codigo">A</option>
+							<option value="codigo">B</option>
+							<option value="codigo">C</option>
+							<option value="codigo">D</option>
+							<option value="codigo">E</option>
 						</select>
 					</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-md-1"><b>Usuario: </b></label>
-				<div class="col-md-3">
-					<input type="text" class="form-control" id="passwd" name="telacudiente" placeholder="Usuario: ">
-				</div>
-				<label class="control-label col-md-1"><b>Contraseña:</b></label>
-				<div class="col-md-3">
-					<input type="password" class="form-control" id="passwd"  placeholder="Contraseña: ">
-				</div>
-				<label class="col-md-1"><b>Confirme contraseña: </b></label>
-				<div class="col-md-3">
-					<input type="password" class="form-control" id="passwd" name="direccion" placeholder="Confirme contraseña: ">
-				</div>
-			</div>
-			
-			<center>
-				<button class="btn btn-info" aria-label="right Align">
-				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Registrar
-				</button></center>
+					<label class="control-label col-md-1"><b>Grupo: </b></label>
+					<div class="col-md-2">
+						<select class="form-control" name="" placeholder="Sexo:" id="option">
+							<option value="sex">elija periodo..</option>
+							<option value="codigo">1er Periodo</option>
+							<option value="codigo">2do Periodo</option>
+							<option value="codigo">3er Periodo</option>
+							<option value="codigo">4to Periodo</option>
+							<option value="codigo">Definitiva</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<div class="col-md-2">
+							<button class="btn btn-info"><span class=" glyphicon glyphicon-search " aria-hidden="true"></span> Consultar</button>
+						</div>
+					</div>
+					<label class="control-label col-md-1"><b></b></label>
+				</form></center>
+			<center><label  class="control-label"><b>Reporte de notas</b></label></center><br>
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover ">
+					
+						<tr class="info">
+						<th><center><b>IDENTIFICACION: </b></center></th>
+						<th><center>NOMBRES: </center></th>
+						<th><center><b>APELLIDOS: </b></center></th>
+						<th><center>MAT</center></th>
+						<th><center>NAT</center></th>
+						<th><center>SOC</center></th>
+						<th><center>ETI</center></th>
+						<th><center>DEM</center></th>
+						<th><center>ESP</center></th>
+						<th><center>ING</center></th>
+						<th><center>QUI</center></th>
+						<th><center>GEO</center></th>
+						<th><center>EST</center></th>
+						<th><center>INF</center></th>
+						<th><center>FIS</center></th>
+						<th><center>EDU</center></th>
+						
+					</tr>
+					<tr class="info">
+						<td><center>1067936788</center></td>
+						<td><center>Jhonatan Alfonso</center></td>
+						<td><center>Paternina Rojas</center></td>
+						<td><center>2.0</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.5</center></td>
+						<td><center>4.0</center></td>
+						<td><center>2.9</center></td>
+						<td><center>3.4</center></td>
+						<td><center>2.5</center></td>
+						<td><center>2.7</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.9</center></td>
+						<td><center>3.8</center></td>
+						<td><center>3.2</center></td>
+						<td><center>4.5</center></td>
+						
+					</tr>
+					<tr class="info">
+						<td><center>1067936799</center></td>
+						<td><center>Andrea Carolina</center></td>
+						<td><center>Lopez Mendoza</center></td>
+						<td><center>2.0</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.5</center></td>
+						<td><center>4.0</center></td>
+						<td><center>2.9</center></td>
+						<td><center>3.4</center></td>
+						<td><center>2.5</center></td>
+						<td><center>2.7</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.9</center></td>
+						<td><center>3.8</center></td>
+						<td><center>3.2</center></td>
+						<td><center>4.5</center></td>
+					</tr>
+					<tr class="info">
 
-		</form><br>
-	</div><br>
+						<td><center>1067936689</center></td>
+						<td><center>Carlos Alberto</center></td>
+						<td><center>Florez torres</center></td>
+						<td><center>2.0</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.5</center></td>
+						<td><center>4.0</center></td>
+						<td><center>2.9</center></td>
+						<td><center>3.4</center></td>
+						<td><center>2.5</center></td>
+						<td><center>2.7</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.9</center></td>
+						<td><center>3.8</center></td>
+						<td><center>3.2</center></td>
+						<td><center>4.5</center></td>
+						
+					</tr>
+					<tr class="info">
+						<td><center>1067936799</center></td>
+						<td><center>Yorelis Andrea</center></td>
+						<td><center>Perez Arrieta</center></td>
+						<td><center>4.0</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.5</center></td>
+						<td><center>4.0</center></td>
+						<td><center>2.9</center></td>
+						<td><center>3.4</center></td>
+						<td><center>2.5</center></td>
+						<td><center>3.6</center></td>
+						<td><center>4.0</center></td>
+						<td><center>2.9</center></td>
+						<td><center>3.8</center></td>
+						<td><center>3.2</center></td>
+						<td><center>4.5</center></td>
+					</tr>
+					<tr class="info">
+
+						<td><center>1067936689</center></td>
+						<td><center>Fidel Antonio</center></td>
+						<td><center>Florez Medrano</center></td>
+						<td><center>4.0</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.5</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.9</center></td>
+						<td><center>3.4</center></td>
+						<td><center>4.5</center></td>
+						<td><center>3.7</center></td>
+						<td><center>4.0</center></td>
+						<td><center>3.9</center></td>
+						<td><center>3.8</center></td>
+						<td><center>3.2</center></td>
+						<td><center>4.5</center></td>
+						
+					</tr>
+				</table>
+			</div>
+		</div><br>
 	<footer>
 		<div class="container" id="footer"><center><b>Copyright © Todos los Derechos Reservados</b></center></div>
 	</footer>

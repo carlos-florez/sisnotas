@@ -37,16 +37,16 @@
 							<li role="presentation"><a id="nav" href="../accesoadministrador.html"><b>Inicio</b></a></li>
 							<li role="presentation"><a id="nav" href="reportesdenotas.php"><b>Reporte de notas</b></a></li>
 							<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav" role="button">Registro actual <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  id="nav" role="button">Registro actual <span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="registroactualestudiante.php">Estudiante</a></li>
 									<li><a href="registroactualdocente.php">Docente</a></li>
 									<li><a href="registroactualgrado.php">Grado</a></li>
-									<li><a href="registroactualasignatura.php">Asignatura</a></li>
+									<li><a  id="select" href="registroactualasignatura.php">Asignatura</a></li>
 								</ul>
 							</li>
-							<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav" role="button">Registro historico <span class="caret"></span></a>
+							<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" id="select"  data-toggle="dropdown" role="button">Registro historico <span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="registrohistoricoestudiante.php">Estudiante</a></li>
 									<li><a href="registrohistoricodocente.php">Docente</a></li>
@@ -55,7 +55,7 @@
 								</ul>
 							</li>
 							<li role="presentation"><a id="nav" href="reporteestudiantesperdidos.php"><b>Estudiantes perdidos</b></a></li>
-							<li role="presentation" class="active"><a id="select"  href="reportecargadocente.php"><b>Cargas docente</b></a></li>
+							<li role="presentation"><a id="nav" href="reportecargadocente.php"><b>Cargas docente</b></a></li>
 						</ul>
 					</div>
 				</div>
@@ -63,33 +63,42 @@
 			</nav>
 	</header>
 			<b><p id="bienvenida">Bienvenid@ administrador(a): Carlos Alberto Florez Torres</p></b>
-	<div class="container" id="centro6">
-		<center><form action="" class="form-inline">
-					<div class="form-group">
-						<label for="nombre">Cedula ó apellidos docente:</label>
-						<input type="text" class="form-control" id="bus" name="nombres" placeholder="Cedula ó apellidos: ">
-					</div>
-					<div class="form-group">
-						<button class="btn btn-info"><span class=" glyphicon glyphicon-search " aria-hidden="true"></span> Consultar</button>
-					</div>
-
-				</form></center>
-					<center>
-					<label for="">Matematicas => 10 - A</label><br>
-					<label for="">Matematicas => 10 - B</label><br>
-					<label for="">Matematicas => 10 - C</label><br>
-					<label for="">Matematicas => 10 - D</label><br>
-					<label for="">Matematicas => 11 - B</label><br>
-					<label for="">Geometria   => 9 - A</label><br>
-					<label for="">Estadistica => 6 - A</label><br>
-					<label for="">Matematicas => 6 - B</label><br>
-					<label for="">Geometria   => 8 - A</label><br>
-					<label for="">Estadistica => 9 - A</label><br>
-					<label for="">Matematicas => 9 - B</label><br></center>
-			</div><br>
-		<footer>
-			<div class="container" id="footer"><center><b>Copyright © Todos los Derechos Reservados</b></center></div>
-		</footer>
+	<div class="container" id="centro2">
+		<center><label for="">Registro historico de asignaturas</label></center>
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover ">
+					
+						<tr class="info">
+						<th><center># </center></th>
+						<th><center>CODIGO: </center></th>
+						<th><center>NOMBRE: </center></th>						
+					</tr>
+					<tr class="info">
+						<td><center>1</center></td>
+						<td><center>A1234</center></td>
+						<td><center>Matematicas</center></td>					
+					</tr>
+					<tr class="info">
+						<td><center>2</center></td>
+						<td><center>A1235</center></td>
+						<td><center>ciencias Naturales</center></td>
+					</tr>
+					<tr class="info">
+						<td><center>3</center></td>
+						<td><center>A1236</center></td>
+						<td><center>ingles</center></td>
+					</tr>
+					<tr class="info">
+						<td><center>4</center></td>
+						<td><center>A1237</center></td>
+						<td><center>Sociales</center></td>
+					</tr>
+				</table>
+			</div>	
+	</div><br>
+	<footer>
+		<div class="container" id="footer"><center><b>Copyright © Todos los Derechos Reservados</b></center></div>
+	</footer>
 	</div>
 <script src="../../../../bootstrap/js/jquery.js"></script>
 <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
